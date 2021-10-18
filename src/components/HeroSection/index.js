@@ -17,7 +17,7 @@ export default function HeroSection({ isPartial, title, content }) {
             ? 'max-w-xl mx-auto md:py-4 border-2 border-white rounded'
             : 'max-w-3xl mx-auto md:py-8'
         )}>
-        <div className='flex flex-col space-y-2 max-w-2xl items-start'>
+        <div className='flex flex-col space-y-4 max-w-2xl items-start'>
           {title && (
             <h1 className='font-bold font-mono text-3xl md:text-5xl tracking-wide text-gray-50'>
               {title}

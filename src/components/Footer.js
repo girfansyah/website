@@ -17,7 +17,7 @@ const stylesP =
 
 export default function Footer() {
   return (
-    <footer className=' px-4 sm:px-6 lg:px-8'>
+    <footer>
       <div className='max-w-3xl mx-auto items-start space-y-2 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden'>
         <div className='flex flex-col-reverse md:grid md:grid-cols-4 gap-4 items-start md:items-center'>
           <div className='space-y-1 md:col-span-2 whitespace-nowrap'>
