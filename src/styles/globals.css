@@ -1,9 +1,19 @@
+@import 'theme';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100vh;
+  min-width: 360px;
+  scroll-behavior: smooth;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply p-0 m-0 antialiased bg-black;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 a {
@@ -13,4 +23,89 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.border-rainbow{
+  border-color: -webkit-linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  -webkit-background-clip: border-box;
+  -webkit-box-decoration-break: clone;
+  background-clip: border-box;
+  color: rgba(255, 255, 255, 0);
+
+}
+
+.rainbow-text-hover:hover {
+  background: -webkit-linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  color: rgba(255, 255, 255, 0);
+}
+
+.rainbow_contact_button {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.rainbow_contact_button:before {
+  content: '';
+  height: 150%;
+  width: 150%;
+  position: absolute;
+  background: conic-gradient(
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7,
+    #fd004c
+  );
+  left: -25%;
+  top: -25%;
+  @apply animate-spin;
+}
+
+.rainbow_contact_button:after {
+  content: 'CONTACT GILANG.';
+  padding-left: 7px;
+  padding-right: 7px;
+  position: absolute;
+  background-color: #fff;
+  height: 93%;
+  width: 93%;
+  top: 3.5%;
+  left: 3.5%;
+  border-radius: 6px;
+  color: #000;
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: grid;
+  place-items: center;
+}
+
+.fill-white {
+  filter: invert(100%) sepia(1%) saturate(3284%) hue-rotate(116deg)
+    brightness(121%) contrast(100%);
 }
