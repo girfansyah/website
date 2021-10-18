@@ -16,17 +16,17 @@ const heroHome = {
 const heroBlog = {
   title: 'Article',
   content:
-    'I write about stuff that I`m interested in and hopefully they resonates with you too.',
+    'I write about stuff that I`m interested in and hopefully they resonates with you too. 🐱‍💻',
 };
 
 const heroProjects = {
   title: 'Projects',
-  content: 'Collection of web development side project',
+  content: 'Collection of web development side project 👾',
 };
 
 const heroSnippets = {
-  title: 'Projects',
-  content: 'Collection of web development side project',
+  title: 'Code Snippets',
+  content: 'Tiny code snippets for you to grab and go. 👾🐱‍🏍',
 };
 
 const sosmed = [

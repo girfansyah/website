@@ -1,10 +1,16 @@
+import Head from 'next/head';
 import { Fragment } from 'react';
 import NextNProgress from 'nextjs-progressbar';
+import Seo from '@components/Seo';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
+      <Seo />
+      <Head>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <NextNProgress
         color='linear-gradient(
           110.78deg,
