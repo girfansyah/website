@@ -1,3 +1,5 @@
+const { colors } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   mode: 'jit',
   purge: [
@@ -21,10 +23,25 @@ module.exports = {
           800: 'var(--green-800)',
           900: 'var(--green-900)',
         },
+        gray: {
+          50: 'var(--gray-50)',
+          100: 'var(--gray-100)',
+          200: 'var(--gray-200)',
+          300: 'var(--gray-300)',
+          400: 'var(--gray-400)',
+          500: 'var(--gray-500)',
+          600: 'var(--gray-600)',
+          700: 'var(--gray-700)',
+          800: 'var(--gray-800)',
+          900: 'var(--gray-900)',
+        },
       },
       fontFamily: {
         sans: "'IBM Plex Sans', sans-serif",
         mono: "'IBM Plex Mono', monospace",
+      },
+      fontSize: {
+        light: ['13px', '20px'],
       },
       textColor: {
         primary: 'var(--text-primary)',
@@ -43,6 +60,22 @@ module.exports = {
         spin: 'spin 2s linear infinite',
         'spin-slow': 'spin 42s linear infinite',
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.blue.400'),
+              '&:hover': {
+                color: theme('colors.blue.600'),
+              },
+              'text-decoration': 'none',
+            },
+            'h1,h2,h3,h4': {
+              color: theme('colors.white'),
+            },
+          },
+        },
+      }),
     },
   },
   variants: {

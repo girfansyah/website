@@ -12,15 +12,14 @@ const icons = [
   { name: 'github', path: '/icons/github.svg', link: 'https://github.com' },
 ];
 
-const stylesP =
-  'flex items-center space-x-1 font-mono text-sm text-white uppercase';
+const stylesP = 'flex space-x-1 font-mono text-light text-white uppercase';
 
 export default function Footer() {
   return (
     <footer>
       <div className='max-w-3xl mx-auto items-start space-y-2 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden'>
         <div className='flex flex-col-reverse md:grid md:grid-cols-4 gap-4 items-start md:items-center'>
-          <div className='space-y-1 md:col-span-2 whitespace-nowrap'>
+          <div className='space-y-1 md:col-span-2'>
             <div className='flex items-center space-x-2'>
               <p className={stylesP}>Built with</p>
               <div className='flex items-center space-x-2'>
@@ -40,12 +39,12 @@ export default function Footer() {
               </div>
             </div>
             <div className={stylesP}>
-              <p>This website is also open sourceed on </p>
+              <p>This website is also open sourceed on</p>
               <a
                 href='https://github.com/girfansyah/website'
                 target='_blank'
                 rel='noreferrer'>
-                <span className='underline inline-block text-blue-400 hover:text-blue-500'>
+                <span className='underline inline-block text-blue-400 hover:text-blue-600'>
                   Github
                 </span>
               </a>

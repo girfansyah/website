@@ -39,9 +39,9 @@ const Header = () => {
                 key={name}
                 className={cn(
                   pathname === path
-                    ? 'bg-gray-800 text-gray-50'
+                    ? 'bg-gray-600 text-gray-50'
                     : 'text-gray-300',
-                  'rounded items-center py-2 px-2 md:px-4 leading-none font-semibold text-sm md:text-base whitespace-nowrap group-hover:text-gray-50 hover:bg-gray-800 transition'
+                  'rounded items-center py-2 px-2 md:px-4 leading-none font-semibold text-sm md:text-base whitespace-nowrap group-hover:text-gray-50 hover:bg-gray-600 transition'
                 )}>
                 <a href={path}>{name}</a>
               </li>

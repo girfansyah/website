@@ -41,7 +41,7 @@ const ProjectSection = ({ isPartial }) => {
             <h2 className='text-xl md:text-2xl font-mono font-bold text-secondary tracking-wide'>
               Projects
             </h2>
-            <div className='flex items-center px-2 py-1 space-x-1 font-mono text-gray-900 font-bold text-xs bg-gray-50'>
+            <div className='flex items-center px-2 py-1 space-x-1 font-mono text-gray-900 font-bold text-xs bg-gray-50 cursor-pointer'>
               <Link href='/projects' passHref>
                 <a className='rainbow-text-hover'>SEE ALL</a>
               </Link>

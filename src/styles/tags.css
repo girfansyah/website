@@ -1,0 +1,149 @@
+.javascript {
+  background-color: #f7df1e;
+  color: #000000;
+}
+
+.react {
+  background-color: #222222;
+  color: #61daf6;
+}
+
+.nextjs {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.showdev {
+  background-color: #091b47;
+  color: #b2ffe1;
+}
+
+.angular {
+  background-color: #a9022a;
+  color: #ffffff;
+}
+.vue {
+  background-color: #41b883;
+  color: #35495e;
+}
+.nuxt {
+  background-color: #050438;
+  color: #baffdf;
+}
+.snippets {
+  background-color: #050438;
+  color: #baffdf;
+}
+.tailwindcss {
+  background-color: #000000;
+  color: #c2fbff;
+}
+.todaylearned {
+  background-color: #ffedc9;
+  color: #820000;
+}
+.gasp {
+  background-color: #000000;
+  color: #88ce04;
+}
+.typescript {
+  background-color: #234a84;
+  color: #ffffff;
+}
+.webdev {
+  background-color: #562765;
+  color: #ffffff;
+}
+.npm {
+  background-color: #cb3837;
+  color: #ffffff;
+}
+.svelte {
+  background-color: #ff3e00;
+  color: #ffffff;
+}
+.serverless {
+  background-color: #1c1c1c;
+  color: #fefff2;
+}
+.opensource {
+  background-color: #26be00;
+  color: #ffffff;
+}
+.tutorial {
+  background-color: #feffa5;
+  color: #b30047;
+}
+.python {
+  background-color: #1e38bb;
+  color: #ffdf5b;
+}
+.testing {
+  background-color: #019b65;
+  color: #ffffff;
+}
+.techtalks {
+  background: #311a99;
+  color: #ff6264;
+}
+
+.github {
+  background-color: #191919;
+  color: #ffffff;
+}
+.productivity {
+  background-color: #2a0798;
+  color: #c8f7c5;
+}
+.programming {
+  background-color: #890606;
+  color: #ffffff;
+}
+.graphql {
+  background-color: #171e26;
+  color: #ff5bc8;
+}
+.postgres {
+  background-color: #ed1556;
+  color: #ffffff;
+}
+.redux {
+  background-color: #764abc;
+  color: #ffffff;
+}
+.ux {
+  background-color: #0065b3;
+  color: #ffffff;
+}
+.codenewbie {
+  background-color: #57d700;
+  color: #ffffff;
+}
+.performance {
+  background-color: #ffa364;
+  color: #000000;
+}
+.webperf {
+  background-color: #8f100c;
+  color: #f9fddc;
+}
+.tooling {
+  background-color: #c1d82f;
+  color: #293845;
+}
+.vscode {
+  background-color: #1c1c1c;
+  color: #8cb8ff;
+}
+.ubuntu {
+  background-color: #e95420;
+  color: #ffffff;
+}
+.devjournal {
+  background-color: #820000;
+  color: #ffffff;
+}
+.news {
+  background-color: #111111;
+  color: #fff9ac;
+}

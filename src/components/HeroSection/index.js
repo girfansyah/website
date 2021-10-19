@@ -31,7 +31,7 @@ export default function HeroSection({ isPartial, title, content }) {
               href='https://www.polywork.com/girfansyah'
               rel='noopener noreferrer'
               target='_blank'>
-              <button className='flex gap-2 px-4 mt-4 py-1.5 space-x-3 text-xs md:text-sm border border-gray-800 hover:border-gray-600 rounded bg-secondary hover:bg-gray-700 text-gray-200 hover:text-gray-50 '>
+              <button className='flex gap-2 px-4 mt-4 py-1.5 space-x-3 text-xs md:text-sm border border-gray-500 hover:border-gray-600 rounded bg-gray-700 hover:bg-gray-600 transition-colors duration-300 text-gray-200 hover:text-gray-50 '>
                 <PolyWork className='w-5 h-5' />
                 My Changelog
               </button>

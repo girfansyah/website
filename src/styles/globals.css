@@ -1,8 +1,28 @@
+@import 'react-notion/src/styles.css';
+/* @import 'prismjs/themes/prism-tomorrow.css'; */
+@import 'prismjs/themes/prism-okaidia.css';
 @import 'theme';
+@import 'tags';
+@import 'notion';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #686868;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
 
 html {
   min-height: 100vh;
@@ -19,6 +39,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ol,
+li {
+  list-style: none;
 }
 
 * {

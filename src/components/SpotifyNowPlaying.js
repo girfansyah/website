@@ -7,7 +7,7 @@ const SpotifyNowPlaying = () => {
   const { data } = useSWR('/api/now-playing', fetcher);
   console.log(data);
   return (
-    <div className='border-2 border-secondary rounded-2xl'>
+    <div className='border-2 border-gray-500 rounded-2xl'>
       <div className='w-full'>
         <div className='flex items-center space-x-6 p-4'>
           <div className='flex items-center justify-center'>
@@ -20,7 +20,7 @@ const SpotifyNowPlaying = () => {
                 </div>
               </div>
             ) : (
-              <div className='w-[100px] h-[100px] bg-gray-700 relative  rounded-full'>
+              <div className='w-[100px] h-[100px] bg-gray-600 relative  rounded-full'>
                 <div className='z-[1] bg-white absolute w-full h-full top-0 origin-center scale-[0.2] rounded-full' />
                 <div className='z-[2] bg-black absolute w-full h-full top-0 origin-center scale-[0.07] rounded-full' />
               </div>

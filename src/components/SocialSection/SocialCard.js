@@ -4,7 +4,7 @@ const SocialCard = (props) => {
   const { children, to, title, username, icon, ispriority } = props;
   return (
     <li
-      className='group col-span-1 cursor-pointer p-2 border-gray-700 rounded-lg border-2 hover:border-dashed hover:border-gray-400'
+      className='group col-span-1 cursor-pointer p-2 border-gray-500 rounded-lg border-2 hover:border-dashed hover:border-gray-400'
       {...props}>
       <a href={to} rel='noopener noreferrer' target='_blank'>
         <div className='flex items-center leading-5 text-left no-underline '>

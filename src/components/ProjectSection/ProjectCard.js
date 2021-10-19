@@ -14,7 +14,7 @@ const ProjectCard = ({
 }) => {
   return (
     <li
-      className='group col-span-1 border border-gray-700 rounded-lg'
+      className='group col-span-1 border border-gray-500 bg-gray-700 hover:bg-gray-600 transition-colors duration-300 rounded-lg'
       {...props}>
       <Link href={href} passHref>
         <a>

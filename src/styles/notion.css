@@ -1,0 +1,62 @@
+.notion {
+  @apply leading-relaxed;
+}
+
+.notion-asset-wrapper > img {
+  @apply rounded;
+}
+
+.notion > .notion-list {
+  @apply py-0 text-gray-200;
+}
+.notion > ul > li {
+  @apply py-0;
+}
+.notion > ol > li {
+  @apply py-0;
+}
+
+.notion > p {
+  @apply text-gray-300;
+}
+
+.notion-text > .notion-link {
+  @apply text-blue-400 no-underline hover:text-blue-600;
+}
+
+.notion > pre[class*='language-'] {
+  @apply text-sm;
+}
+
+.notion-text > .notion-inline-code {
+  color: #acdb66;
+  background: transparent;
+}
+
+.notion-callout.notion-gray_background_co.notion-gray_background {
+  border-color: #888;
+  background-color: #333;
+  color: #eaeaea;
+  width: 100%;
+}
+
+.notion-callout-text > .notion-inline-code {
+  color: #acdb66;
+  background: transparent;
+}
+
+.notion-inline-code > .notion-link {
+  color: #acdb66;
+}
+
+.notion > .notion-quote {
+  @apply text-base text-gray-400 bg-transparent font-normal;
+}
+
+.notion-asset-wrapper {
+  @apply mx-auto my-0;
+}
+
+.notion-asset-wrapper > .notion-image-caption {
+  @apply mt-0 text-center text-base;
+}
