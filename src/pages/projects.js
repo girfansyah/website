@@ -3,8 +3,9 @@ import MainLayout from '@components/MainLayout';
 import HeroSection from '@components/HeroSection';
 import ProjectSection from '@components/ProjectSection';
 import { heroProjects } from '@lib/constants';
+import { getDatabase } from '@lib/notion';
 
-export default function Projects() {
+export default function Projects({ projects }) {
   const seoTitle = `${heroProjects.title} - Gilang Irfansyah`;
   return (
     <MainLayout>
@@ -13,7 +14,7 @@ export default function Projects() {
         description={heroProjects.content}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.vercel.app/projects`,
+          url: `https://girfansyah.site/projects`,
           description: heroProjects.content,
           site_name: 'Gilang Irfansyah',
         }}
@@ -25,4 +26,19 @@ export default function Projects() {
       <ProjectSection />
     </MainLayout>
   );
+}
+
+export async function getStaticProps() {
+  const database = await getDatabase();
+  const projects = database
+    .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+    .filter(({ status }) => status === 'Published')
+    .filter(({ type }) => type === 'Projects');
+
+  return {
+    props: {
+      projects,
+    },
+    revalidate: 60,
+  };
 }

@@ -13,7 +13,7 @@ export default function Snippets() {
         description={heroSnippets.content}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.vercel.app/snippets`,
+          url: `https://girfansyah.site/snippets`,
           description: heroSnippets.content,
           site_name: 'Gilang Irfansyah',
         }}

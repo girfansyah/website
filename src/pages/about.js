@@ -13,7 +13,7 @@ export default function About() {
         description={seoDesc}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.vercel.app/about`,
+          url: `https://girfansyah.site/about`,
           description: seoDesc,
           site_name: 'Gilang Irfansyah',
         }}

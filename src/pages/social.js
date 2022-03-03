@@ -12,7 +12,7 @@ export default function Social() {
         description={seoDesc}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.vercel.app/social`,
+          url: `https://girfansyah.site/social`,
           description: seoDesc,
           site_name: 'Gilang Irfansyah',
         }}

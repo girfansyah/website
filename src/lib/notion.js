@@ -13,8 +13,8 @@ export const getPost = async (pageId) => {
 };
 
 export const formatDate = (date) =>
-  new Date(date).toLocaleString('en-US', {
+  new Date(date).toLocaleString('id-ID', {
     month: 'short',
     day: '2-digit',
-    year: 'numeric',
+    year: 'numeric'
   });

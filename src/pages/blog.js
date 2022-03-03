@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
         description={heroBlog.content}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.vercel.app/blog`,
+          url: `https://girfansyah.site/blog`,
           description: heroBlog.content,
           site_name: 'Gilang Irfansyah',
         }}

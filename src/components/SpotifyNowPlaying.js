@@ -5,7 +5,6 @@ import { SpotifyIcon } from './Icons/LogoIcons';
 
 const SpotifyNowPlaying = () => {
   const { data } = useSWR('/api/now-playing', fetcher);
-  console.log(data);
   return (
     <div className='border-2 border-gray-500 rounded-2xl'>
       <div className='w-full'>

@@ -1,16 +1,30 @@
-import Head from 'next/head';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import NextNProgress from 'nextjs-progressbar';
 import Seo from '@components/Seo';
+import * as ga from '@lib/ga';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <Fragment>
       <Seo />
-      <Head>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      </Head>
       <NextNProgress
         color='linear-gradient(
           110.78deg,

@@ -8,9 +8,7 @@ export default function Post({ page, post }) {
   const { slug, title, summary, image, Author, tags, publishedAt } = post;
 
   const seoTitle = `${title} - Gilang Irfansyah`;
-  const seoUrl = `https://girfansyah.vercel.app/blog/${slug}`;
-
-  // console.log(Author.fullName);
+  const seoUrl = `https://girfansyah.site/blog/${slug}`;
 
   return (
     <MainLayout>
@@ -24,7 +22,7 @@ export default function Post({ page, post }) {
           description: summary,
           images: [
             {
-              url: 'https://girfansyah.vercel.app/static/images/banner.png',
+              url: 'https://girfansyah.site/static/images/banner.png',
               alt: seoTitle,
             },
           ],
