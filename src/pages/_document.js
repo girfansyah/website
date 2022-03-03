@@ -32,13 +32,6 @@ class MyDocument extends Document {
           `,
             }}
           />
-          <link
-            expr:href='data:blog.url'
-            hrefLang='x-default'
-            rel='alternate'
-          />
-          <meta content='Indonesia' name='geo.placename' />
-          <meta content='id' name='geo.country' />
           <meta name='yandex-verification' content='b23ac4a0168511cd' />
           <meta
             name='google-site-verification'
