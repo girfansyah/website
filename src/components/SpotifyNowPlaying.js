@@ -61,12 +61,7 @@ const SpotifyNowPlaying = () => {
                   <span className='text-xs font-bold uppercase'>
                     {data?.artistUrl ? 'Artist :' : ''}
                   </span>{' '}
-                  <a
-                    href={`${data?.artistUrl ?? ''}`}
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    {data?.artist ?? ''}
-                  </a>
+                  <span>{data?.artist ?? ''}</span>
                 </p>
               </div>
               <div>
