@@ -5,15 +5,17 @@ import { heroSnippets } from '@lib/constants';
 
 export default function Snippets() {
   const seoTitle = `${heroSnippets.title} - Gilang Irfansyah`;
+  const url = "https://girfansyah.site/snippets"
 
   return (
     <MainLayout>
       <NextSeo
         title={seoTitle}
         description={heroSnippets.content}
+        canonical={url}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.site/snippets`,
+          url: url,
           description: heroSnippets.content,
           site_name: 'Gilang Irfansyah',
         }}

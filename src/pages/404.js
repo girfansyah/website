@@ -1,14 +1,12 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import HeroSection from '@components/HeroSection';
 import MainLayout from '@components/MainLayout';
 
 const NotFound = () => {
+  
   return (
+  
     <MainLayout>
-      <Head>
-        <title>404 - Gilang Irfansyah</title>
-      </Head>
       <div className='flex flex-col items-start max-w-3xl mx-auto px-4 sm:px-6 xl:px-8 pt-12 pb-24 lg:pb-16'>
         <h1 className='font-bold text-2xl md:text-4xl tracking-tight mb-4'>
           404 - Page Not Found
@@ -24,6 +22,7 @@ const NotFound = () => {
         </Link>
       </div>
     </MainLayout>
+  
   );
 };
 

@@ -7,14 +7,16 @@ import { getDatabase } from '@lib/notion';
 
 export default function Projects({ projects }) {
   const seoTitle = `${heroProjects.title} - Gilang Irfansyah`;
+  const url = 'https://girfansyah.site/projects'
   return (
     <MainLayout>
       <NextSeo
         title={seoTitle}
         description={heroProjects.content}
+        canonical={url}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.site/projects`,
+          url: url,
           description: heroProjects.content,
           site_name: 'Gilang Irfansyah',
         }}

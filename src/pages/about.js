@@ -5,15 +5,17 @@ import MainLayout from '@components/MainLayout';
 export default function About() {
   const seoTitle = 'About - Gilang Irfansyah';
   const seoDesc = 'All about Gilang Irfansyah';
+  const url = 'https://girfansyah.site/about'
 
   return (
     <MainLayout>
       <NextSeo
         title={seoTitle}
         description={seoDesc}
+        canonical={url}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.site/about`,
+          url: url,
           description: seoDesc,
           site_name: 'Gilang Irfansyah',
         }}

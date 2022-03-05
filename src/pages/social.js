@@ -5,14 +5,16 @@ import SocialSection from '@components/SocialSection';
 export default function Social() {
   const seoTitle = 'Social - Gilang Irfansyah';
   const seoDesc = 'Connect with me';
+  const url = "https://girfansyah.site/social"
   return (
     <MainLayout>
       <NextSeo
         title={seoTitle}
         description={seoDesc}
+        canonical={url}
         openGraph={{
           title: seoTitle,
-          url: `https://girfansyah.site/social`,
+          url: url,
           description: seoDesc,
           site_name: 'Gilang Irfansyah',
         }}

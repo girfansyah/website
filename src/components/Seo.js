@@ -4,6 +4,7 @@ const config = {
   title: 'Gilang Irfansyah - Frontend Developer, Open Source, & Thinker',
   description:
     'I’m a frontend developer, open source & thinker that loves to create stuff!',
+  canonical="https://girfansyah.site/"
   openGraph: {
     type: 'website',
     locale: 'id_ID',
