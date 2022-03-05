@@ -32,6 +32,10 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <meta
+            name='p:domain_verify'
+            content='9fe1102302232b32a275a3e726dbbdc6'
+          />
           <meta name='yandex-verification' content='b23ac4a0168511cd' />
           <meta
             name='google-site-verification'
