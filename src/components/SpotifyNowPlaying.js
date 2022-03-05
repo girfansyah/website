@@ -13,7 +13,11 @@ const SpotifyNowPlaying = () => {
             {data?.albumImageUrl ? (
               <div className='w-[100px] h-[100px] relative'>
                 <div className={data?.isPlaying ? 'animate-spin-slow' : null}>
-                  <img src={data.albumImageUrl} alt={data.title} />
+                  <img
+                    src={data.albumImageUrl}
+                    alt={data.title}
+                    className='rounded-full'
+                  />
                   <div className='z-[1] bg-white absolute w-full h-full top-0 origin-center scale-[0.2] rounded-full' />
                   <div className='z-[2] bg-black absolute w-full h-full top-0 origin-center scale-[0.07] rounded-full' />
                 </div>
@@ -70,8 +74,8 @@ const SpotifyNowPlaying = () => {
                   {data?.isPlaying ? (
                     <div className='flex items-center space-x-2'>
                       <div className='relative w-3 h-3'>
-                        <div className='w-full h-full bg-yellow-500 rounded-full animate-ping' />
-                        <div className='w-full h-full bg-yellow-500 rounded-full absolute top-0' />
+                        <div className='w-full h-full bg-green-500 rounded-full animate-ping' />
+                        <div className='w-full h-full bg-green-500 rounded-full absolute top-0' />
                       </div>
                       <p className='text-primary text-xs font-bold uppercase'>
                         Playing
